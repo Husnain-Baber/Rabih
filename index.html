@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Rabih | E-Commerce</title>
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+      <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Fav end -->
+      <!-- <link rel="stylesheet" href="assets/css/all.min.css" /> -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="assets/css/typography.css">
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <!-- <link rel="stylesheet" href="assets/css/tilteffect.css" /> -->
+      <!-- <link rel="stylesheet" href="assets/vendor/aos/aos.css"> -->
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+
+      <style>
+         header#main-header {
+            top: 0;
+            max-width: 1400px;
+            margin: auto;
+         }
+
+         #img1,
+         #img2,
+         #img3 {
+            display: none
+         }
+      </style>
+   </head>
+
+   <body data-anm=".anm">
+      <div id="loading">
+         <div class="loading-inner">
+            <div class="d-flex align-items-center justify-content-center"
+               style="width: 200px; height: 200px; margin:auto">
+               <div class="loading-logo">
+                  <img src="assets/img/rabih-logo-light.png" alt="">
+               </div>
+            </div>
+            <div class="progress">
+               <div class="progress-value" id="progress-value"></div>
+               <div id="image-block" class="">
+                  <p id="percentage">0%</p>
+                  <img src="assets/img/dealers/dealer1.png" style="width: 300px;transform: translate(-130px, -75px);"
+                     alt="" id="img1">
+                  <img src="assets/img/dealers/dealer2.png" style="width: 300px;
+                  transform: translate(-130px, -75px);filter: contrast(0.5) brightness(2.5);" alt="" id="img2">
+                  <img src="assets/img/dealers/dealer3.png" style="width: 300px;
+                  transform: translate(-130px, -75px);filter: contrast(0.5) brightness(2.5);" alt="" id="img3">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sidemenu">
+         <input type="checkbox" id="navcheck" role="button" title="menu">
+         <label for="navcheck" aria-hidden="true" title="menu" class="input--lable">
+            <span class="burger">
+               <span class="bar">
+                  <span class="visuallyhidden">Menu</span>
+               </span>
+            </span>
+         </label>
+         <nav class="menu" id="menu">
+            <a href="#">How Rabih Works</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Register</a>
+         </nav>
+      </div>
+      <!-- <div style="max-width: 1400px">
+      <object data="assets/svg/merge-shape.svg" type="image/svg+xml" class="svg--image"></object>
+   </div> -->
+      <main>
+
+         <div class="bg-shape">
+            <img src="assets/img/merge-shape.webp" alt="" class="w-100">
+         </div>
+         <object data="assets/svg/header-left.svg" class="svg--image2"></object>
+         <object data="assets/svg/header-right.svg" class="svg--image"></object>
+         <header id="main-header">
+            <div class="main-header">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <nav class="navbar navbar-expand-lg navbar-light">
+
+                        <a class="navbar-brand brand-dark" href="#"> <img class="img-fluid logo"
+                              src="assets/img/rabih-logo.png" alt="Rabih"
+                              />
+                        </a>
+                        <a class="navbar-brand brand-light" href="#"> <img class="img-fluid logo"
+                              src="assets/img/rabih-logo-light.png" alt="Rabih" />
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <div class="menu-main-menu-container">
+                              <ul id="top-menu" class="navbar-nav ml-auto">
+                                 <li class="menu-item">
+                                    <a href="#"> How Rabih Works
+                                       <img src="assets/svg/PNG/Upper Dots Shape.png" alt="" class="Rabih-icon-1">
+                                    </a>
+                                 </li>
+
+                                 <li class="menu-item">
+                                    <a href="#">About Us
+                                       <img src="assets/svg/PNG/Upper Dots Shape.png" alt="" class="Rabih-icon-2">
+                                    </a>
+                                 </li>
+
+                                 <li class="menu-item">
+                                    <a href="#">Contact Us
+                                       <img src="assets/svg/PNG/Upper Dots Shape.png" alt="" class="Rabih-icon-3">
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">Register
+                                       <img src="assets/svg/PNG/Upper Dots Shape.png" alt="" class="Rabih-icon-4">
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+
+
+                        <div class="nav-overlay"></div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+
+         <section class="first--section">
+            <div class="container rabih-container">
+               <div class="rabih-text">
+
+                  <p class="text-1">How Rabih
+                  <p class="text-2">Works</p>
+                  <span class="question-mark">?</span>
+                  </p>
+
+               </div>
+
+               <div class="Rabih-web-img">
+
+
+
+                  <img src="assets/svg/PNG/Bottom Shape.png" alt="" class="bottom-shape">
+                  <img src="assets/svg/PNG/Mobile 1.png" alt="" class="mobil-1 anm" 
+                  data-speed-x="0"
+                  data-speed-y="0"
+                  data-speed-scale="5"
+                  data-speed-rotate="-5"
+                  data-speed-opacity="1">
+                  <img src="assets/svg/PNG/Mobile 2.png" alt="" class="mobil-2 anm"
+                  data-speed-x="0"
+                  data-speed-y="0"
+                  data-speed-scale="5"
+                  data-speed-rotate="5">
+                  <img src="assets/svg/PNG/Mobile 3, 4.png" alt="" class="mobil-3 anm"
+                  data-speed-x="0"
+                  data-speed-y="0"
+                  data-speed-scale="5"
+                  data-speed-rotate="-5">
+                  <img src="assets/svg/PNG/Mobile 5.png" alt="" class="mobil-5 anm"
+                  data-speed-x="0"
+                  data-speed-y="0"
+                  data-speed-scale="5"
+                  data-speed-rotate="-5">
+                  <img src="assets/svg/PNG/Image-with-animation (2).png" alt="" class="girl-animation">
+                  <img src="assets/svg/PNG/Image-with-Shadow (1).png" alt="" class="girl-img">
+
+               </div>
+               <div class="rabih-responsive-img">
+                  <div class="timeline-container">
+                     <div id="timeline">
+                        <div class="timeline-item">
+                           <div class="timeline-icon">
+                              <i class="fa fa-1" aria-hidden="true"></i>
+                           </div>
+                           <div class="timeline-content">
+                              <h2>Image 1</h2>
+                              <img src="assets/img/1.png" alt="">
+                              <!-- <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                          </p> -->
+                              <!-- <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span> -->
+                           </div>
+                        </div>
+
+                        <div class="timeline-item">
+                           <div class="timeline-icon">
+                              <i class="fa fa-2" aria-hidden="true"></i>
+                           </div>
+                           <div class="timeline-content right">
+                              <h2>Image 2</h2>
+                              <img src="assets/img/2.png" alt="">
+                           </div>
+                        </div>
+
+                        <div class="timeline-item">
+                           <div class="timeline-icon success">
+                              <i class="fa fa-3" aria-hidden="true"></i>
+                           </div>
+                           <div class="timeline-content">
+                              <h2>Image 3</h2>
+                              <img src="assets/img/3.png" alt="">
+                           </div>
+                        </div>
+
+                        <div class="timeline-item">
+                           <div class="timeline-icon">
+                              <i class="fa fa-4" aria-hidden="true"></i>
+                           </div>
+                           <div class="timeline-content right">
+                              <h2>Image 4</h2>
+                              <img src="assets/img/4.png" alt="">
+                           </div>
+                        </div>
+
+                        <div class="timeline-item">
+                           <div class="timeline-icon">
+                              <i class="fa fa-5" aria-hidden="true"></i>
+                           </div>
+                           <div class="timeline-content">
+                              <h2>Image 5</h2>
+                              <img src="assets/img/5.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+               <!-- <div class="rabih-responsive-img">
+               <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div>
+                     <img src="assets/img/1.png" alt="">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut expedita earum. Esse animi architecto labore voluptatibus eum? Reprehenderit unde voluptate vero facilis recusandae eum sunt itaque eligendi alias consequuntur.</p>
+                  </div>
+                  <div>
+                     <img src="assets/img/2.png" alt="">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut expedita earum. Esse animi architecto labore voluptatibus eum? Reprehenderit unde voluptate vero facilis recusandae eum sunt itaque eligendi alias consequuntur.</p>
+                  </div>
+                  <div>
+                     <img src="assets/img/3.png" alt="">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut expedita earum. Esse animi architecto labore voluptatibus eum? Reprehenderit unde voluptate vero facilis recusandae eum sunt itaque eligendi alias consequuntur.</p>
+                  </div>
+                  <div>
+                     <img src="assets/img/4.png" alt="">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut expedita earum. Esse animi architecto labore voluptatibus eum? Reprehenderit unde voluptate vero facilis recusandae eum sunt itaque eligendi alias consequuntur.</p>
+                  </div>
+                  <div>
+                     <img src="assets/img/5.png" alt="">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut expedita earum. Esse animi architecto labore voluptatibus eum? Reprehenderit unde voluptate vero facilis recusandae eum sunt itaque eligendi alias consequuntur.</p>
+                  </div>
+               </div>
+               <img src="assets/svg/PNG/Bottom Shape.png" alt="" class="bottom-shape">
+
+            </div> -->
+            </div>
+
+         </section>
+
+         <section class="second--section">
+
+            <div class="container rabih-container-2">
+
+               <h4 class="Rabih-heading">About Us</h4>
+
+               <div class="rabih-text-1">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet porro unde nisi fugit iste
+                     officiis
+                     fugiat, facere dolorum adipisci maiores laudantium necessitatibus doloribus eum pariatur vero
+                     eligendi
+                     repellat distinctio culpa.</p>
+               </div>
+               <div class="rabih-text-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet maiores minus temporibus,
+                     quibusdam dolores aliquam exercitationem rerum distinctio fuga incidunt, modi dolore omnis
+                     repellendus
+                     aliquid nisi harum, vel commodi!</p>
+               </div>
+
+               <!-- <div class="outer">
+     
+   </div> -->
+               <img src="assets/svg/PNG/Shape for Image 2.png" alt="" class="girl-animation-2">
+               <img src="assets/svg/PNG/Image 2.png" alt="" class="Rabih-girl-img-2">
+
+            </div>
+         </section>
+      </main>
+
+
+
+      <section class="position-relative contact-section">
+         <div class="container info">
+            <div class="d-flex align-items-center justify-content-center contact-wrapper">
+               <div class="contact">
+                  <form class="text-center mt-5">
+                     <h2 class="sub-heading-1">Contact Us</h2>
+                     <input type="text" id="fname" name="fname" placeholder="Name" class="text-name">
+                     <input type="text" id="email" name="email" placeholder="Email" class="text-email">
+                     <input type="text" id="subject" name="subject" placeholder="Subject" class="text-sub">
+                     <textarea name="message" rows="6" cols="50" placeholder="Message" class="text-area"></textarea>
+                     <button class="btn sent-btn" type="button" style="border-radius: 5px !important;">Send</button>
+                  </form>
+
+               </div>
+               <div class="register">
+                  <div class="mobile-container">
+                     <img src="assets/svg/PNG/Mob _ Register.png" alt="" class="mob-img">
+
+                     <div class="register-forms">
+                        <h2 class="sub-heading">Register</h2>
+
+                        <form class="text-center">
+
+                           <input type="text" id="fname" name="fname" placeholder="Email/Username/Number"
+                              class="text-name-1"><br>
+                           <input type="password" id="fname" name="password" placeholder="Password" class="password">
+
+
+                           <button type="button" class="btn btn-secondary btn-md abc"
+                              style="border-radius: 5px !important;">Sign Up</button>
+                           <img src="assets/svg/rabih-logo.png" alt="" class="mob-logo">
+                        </form>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="link">
+               <a href="" class="color">
+                  <i class="fab fa-facebook"></i>
+               </a>
+
+               <a href="" class="color">
+                  <i class="fa-brands fa-instagram"></i>
+               </a>
+
+               <a href="" class="color">
+                  <i class="fa-brands fa-twitter"></i>
+               </a>
+
+               <a href="" class="color">
+                  <i class="fa-brands fa-linkedin"></i>
+               </a>
+
+               <a href="" class="color">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+
+               <a href="" class="color">
+                  <i class="fa-brands fa-youtube"></i>
+               </a>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+
+
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/anm.js"></script>
+      <script src="assets/js/tiltfx.js"></script>
+      <script src="assets/js/custom.js"></script>
+
+
+
+      <script>
+         $(document).ready(function () {
+            // anm.on();
+            var i = 0;
+            $('#loading').delay(4000).fadeOut("slow");
+            var img1 = document.getElementById("img1");
+            var img2 = document.getElementById("img2");
+            var img3 = document.getElementById("img3");
+
+            var img_block = document.getElementById("image-block");
+            img1.style.display = 'block';
+
+            move();
+            function move() {
+               document.body.style.overflow = "hidden";
+               if (i == 0) {
+                  i = 1;
+                  var elem = document.getElementById("progress-value");
+                  var width = 1;
+                  var id = setInterval(frame, 30);
+                  function frame() {
+                     if (width >= 100) {
+                        document.body.style.overflow = "visible";
+                        clearInterval(id);
+                        i = 0;
+                     } else {
+                        if (width == 30) {
+                           img1.style.display = 'none';
+                           img2.style.display = 'block';
+                           // console.log('Width = '+width);
+                        }
+                        if (width == 70) {
+                           img2.style.display = 'none';
+                           img3.style.display = 'block';
+                        }
+                        width++;
+                        var elem2 = document.getElementById("percentage").innerHTML = width + "%";
+                        elem.style.width = width + "%";
+                        // $('#img-block').css('left',width);
+
+                        img_block.style.position = "absolute";
+                        img_block.style.left = width + "%";
+                        // console.log(elem.style.width);
+                     }
+                  }
+               }
+            }
+         });
+         $(document).ready(function () {
+
+            $('#menucheckbox').click(function () {
+               // alert("Checkbox state (method 1) = " + $('#menucheckbox').prop('checked'));
+               if ($('#menucheckbox').is(':checked')) {
+                  $('.nav-overlay').css('opacity', 1);
+                  $('.nav-overlay').css('visibility', 'visible');
+                  $('body').css('overflow', 'hidden');
+               } else {
+                  $('.nav-overlay').css('opacity', 0);
+                  $('.nav-overlay').css('visibility', 'hidden');
+                  $('body').css('overflow', 'auto');
+               }
+            });
+         })
+      </script>
+      <script>
+         $(document).ready(function () {
+            $('#menucheckbox').click(function () {
+               // alert("Checkbox state (method 1) = " + $('#menucheckbox').prop('checked'));
+               if ($('#menucheckbox').is(':checked')) {
+                  $('.nav-overlay').css('opacity', 1);
+                  $('.nav-overlay').css('visibility', 'visible');
+                  $('#responsive--menu2').css('opacity', 1);
+                  $('#responsive--menu2').css('visibility', 'visible');
+                  $('body').css('overflow', 'hidden');
+               } else {
+                  $('.nav-overlay').css('opacity', 0);
+                  $('.nav-overlay').css('visibility', 'hidden');
+                  $('#responsive--menu2').css('opacity', 0);
+                  $('#responsive--menu2').css('visibility', 'hidden');
+                  $('body').css('overflow', 'auto');
+               }
+            });
+         })
+      </script>
+      <script>
+       
+         $(function () {
+            var timelineBlocks = $('.timeline-item'),
+            offset = 0.8;
+            hideBlocks(timelineBlocks, offset);
+            $(window).on('scroll', function () {
+               (!window.requestAnimationFrame)
+                  ? setTimeout(function () { showBlocks(timelineBlocks, offset); }, 100)
+                  : window.requestAnimationFrame(function () { showBlocks(timelineBlocks, offset); });
+            });
+            function hideBlocks(blocks, offset) {
+               blocks.each(function () {
+                  ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
+               });
+            }
+            function showBlocks(blocks, offset) {
+               blocks.each(function () {
+                  ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) && $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('animate-it');
+
+               });
+            }
+         });
+      </script>
+   </body>
+
+</html>
